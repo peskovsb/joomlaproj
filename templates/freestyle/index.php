@@ -2,12 +2,12 @@
 <html>
 <head>
 <title>Free Style | Home</title>
-<link href="/templates/beez3/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="/templates/beez3/js/jquery-1.11.0.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
 <!-- Custom Theme files -->
 <!--theme-style-->
-<link href="/templates/beez3/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,8 +15,8 @@
 <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,500,700,800,900,100italic,300italic,400italic,500italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <!--//fonts-->
-<script type="text/javascript" src="/templates/beez3/js/move-top.js"></script>
-<script type="text/javascript" src="/templates/beez3/js/easing.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 					jQuery(document).ready(function($) {
 						$(".scroll").click(function(event){		
@@ -26,9 +26,9 @@
 					});
 				</script>	
 <!-- start menu -->
-<script src="/templates/beez3/js/simpleCart.min.js"> </script>
-<link href="/templates/beez3/css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="/templates/beez3/js/memenu.js"></script>
+<script src="js/simpleCart.min.js"> </script>
+<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/memenu.js"></script>
 <script>$(document).ready(function(){$(".memenu").memenu();});</script>				
 </head>
 <body> 
@@ -43,14 +43,14 @@
 				</div>
 			</div>
 			<div class="col-md-4 top-header-middle">
-				<a href="index.html"><img src="/templates/beez3/images/logo-4.png" alt="" /></a>
+				<a href="index.html"><img src="images/logo-4.png" alt="" /></a>
 			</div>
 			<div class="col-md-4 top-header-right">
 				<div class="cart box_1">
 						<a href="checkout.html">
 						<h3> <div class="total">
 							<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-							<img src="/templates/beez3/images/cart-1.png" alt="" />
+							<img src="images/cart-1.png" alt="" />
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
@@ -311,7 +311,7 @@
 	</div>
 	<!--banner-ends--> 
 	<!--Slider-Starts-Here-->
-				<script src="/templates/beez3/js/responsiveslides.min.js"></script>
+				<script src="js/responsiveslides.min.js"></script>
 			 <script>
 			    // You can also use "$(window).load(function() {"
 			    $(function () {
@@ -347,7 +347,7 @@
 							</div>
 						</div>
 						<div class="bnr-right"> 
-							<a href="single.html"><img src="/templates/beez3/images/b-1.jpg" alt="" /></a>
+							<a href="single.html"><img src="images/b-1.jpg" alt="" /></a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -362,7 +362,7 @@
 							</div>
 						</div>
 						<div class="bnr-right"> 
-							<a href="single.html"><img src="/templates/beez3/images/b-2.jpg" alt="" /></a>
+							<a href="single.html"><img src="images/b-2.jpg" alt="" /></a>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -379,7 +379,7 @@
 				<div class="col-md-3 product-left"> 
 					<div class="p-one simpleCart_shelfItem">							
 							<a href="single.html">
-								<img src="/templates/beez3/images/shoes-1.png" alt="" />
+								<img src="images/shoes-1.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -393,7 +393,7 @@
 					<div class="p-one simpleCart_shelfItem">
 						
 						<a href="single.html">
-								<img src="/templates/beez3/images/shoes-2.png" alt="" />
+								<img src="images/shoes-2.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -407,7 +407,7 @@
 					<div class="p-one simpleCart_shelfItem">
 						
 						<a href="single.html">
-								<img src="/templates/beez3/images/shoes-3.png" alt="" />
+								<img src="images/shoes-3.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -421,7 +421,7 @@
 					<div class="p-one simpleCart_shelfItem">
 						
 						<a href="single.html">
-								<img src="/templates/beez3/images/shoes-13.png" alt="" />
+								<img src="images/shoes-13.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -438,7 +438,7 @@
 					<div class="p-one simpleCart_shelfItem">
 						
 						<a href="single.html">
-								<img src="/templates/beez3/images/shoes-5.png" alt="" />
+								<img src="images/shoes-5.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -452,7 +452,7 @@
 					<div class="p-one simpleCart_shelfItem">
 						
 						<a href="single.html">
-								<img src="/templates/beez3/images/shoes-6.png" alt="" />
+								<img src="images/shoes-6.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -466,7 +466,7 @@
 					<div class="p-one simpleCart_shelfItem">
 						
 						<a href="single.html">
-								<img src="/templates/beez3/images/shoes-7.png" alt="" />
+								<img src="images/shoes-7.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -480,7 +480,7 @@
 					<div class="p-one simpleCart_shelfItem">
 						
 						<a href="single.html">
-								<img src="/templates/beez3/images/shoes-8.png" alt="" />
+								<img src="images/shoes-8.png" alt="" />
 								<div class="mask">
 									<span>Quick View</span>
 								</div>
@@ -501,21 +501,21 @@
 			<div class="abt-shoe-main">
 				<div class="col-md-4 abt-shoe-left">
 					<div class="abt-one">
-						<a href="single.html"><img src="/templates/beez3/images/abt-1.jpg" alt="" /></a>
+						<a href="single.html"><img src="images/abt-1.jpg" alt="" /></a>
 						<h4><a href="single.html">Cras dolor ligula</a></h4>
 						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
 					</div>
 				</div>
 				<div class="col-md-4 abt-shoe-left">
 					<div class="abt-one">
-						<a href="single.html"><img src="/templates/beez3/images/abt-2.jpg" alt="" /></a>
+						<a href="single.html"><img src="images/abt-2.jpg" alt="" /></a>
 						<h4><a href="single.html">Cras dolor ligula</a></h4>
 						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
 					</div>
 				</div>
 				<div class="col-md-4 abt-shoe-left">
 					<div class="abt-one">
-						<a href="single.html"><img src="/templates/beez3/images/abt-3.jpg" alt="" /></a>
+						<a href="single.html"><img src="images/abt-3.jpg" alt="" /></a>
 						<h4><a href="single.html">Cras dolor ligula</a></h4>
 						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
 					</div>
