@@ -299,12 +299,6 @@
 			    <li>
 					<div class="banner-1"></div>
 				</li>
-				<li>
-					<div class="banner-2"></div>
-				</li>
-				<li>
-					<div class="banner-3"></div>
-				</li>
 			</ul>
 		</div>
 		<div class="clearfix"> </div>
@@ -333,48 +327,220 @@
 			    });
 			  </script>
 			<!--End-slider-script-->
-	<!--start-banner-bottom--> 
-	<div class="banner-bottom">
-		<div class="container">
-			<div class="banner-bottom-top">
-				<div class="col-md-6 banner-bottom-left">
-					<div class="bnr-one">
-						<div class="bnr-left">
-							<h1><a href="single.html">Duis dictum volutpat</a></h1>
-							<p>Nulla tempus facilisis purus at.</p>
-							<div class="b-btn"> 
-								<a href="single.html">SHOP NOW</a>
-							</div>
-						</div>
-						<div class="bnr-right"> 
-							<a href="single.html"><img src="/templates/beez3/images/b-1.jpg" alt="" /></a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="col-md-6 banner-bottom-right">
-					<div class="bnr-two">
-						<div class="bnr-left">
-							<h2><a href="single.html">Phasellus quis nunc</a></h2>
-							<p>Nulla tempus facilisis purus at.</p>
-							<div class="b-btn"> 
-								<a href="single.html">SHOP NOW</a>
-							</div>
-						</div>
-						<div class="bnr-right"> 
-							<a href="single.html"><img src="/templates/beez3/images/b-2.jpg" alt="" /></a>
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!--end-banner-bottom--> 
 	<!--start-shoes--> 
-	<div class="shoes"> 
-		<div class="container"> 
+	<div class="shoes">
+    <div class="container" style="font-size:16px; line-height: 24px;">
+        <div class="col-md-8">
+            <h3 style="margin-top:0">Разработка сайтов просто и легко!</h3>
+            <p>
+                Здравствуйте, долгое время я работаю <b>вебмастером</b>.
+                За это время профессия не просто стала любимой, а заняла первое место в моей жизни.
+                За <span style="font-family: arial;">10</span> лет работы в этой сфере,
+                я наработал бесценный <b>опыт</b>, который позволяет
+                вести клиента от создания профессионального дизайна, размещения на хостинге,
+                наполнения контентом, что в дальнейшем выливается в <b>успешное СЕО продвижение</b>.
+                Также я могу проконсультировать, провести аудит, а также заняться фиксацией багов сайта.
+            </p>
+            <p>
+                Прежде чем задаваться вопросы, предлагаю вам зайти в раздел часто-задаваемых вопросов (FAQ),
+                где вы наверняка найдете большинство ответов на свои вопросы,
+                <a style="text-decoration:underline" href="">посмотреть здесь</a>
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <img src="/templates/beez3/images/iamm.jpg" style="width:70%">
+        </div>
+    </div>
+    </div>
+
+    <!--start-abt-shoe-->
+    <div class="abt-shoe" style="padding-bottom:3em;">
+        <div class="container">
+            <div class="abt-shoe-main">
+                <div class="col-md-4 abt-shoe-left">
+                    <div class="abt-one">
+                        <a href="single.html"><img src="/templates/beez3/images/bitrix-banner8.jpg" alt="" /></a>
+                        <h4><a href="single.html"><span style="font-family: arial;">1</span>C Bitrix</a></h4>
+                        <p>Сайт на Битрикс это верный путь к успеху. Пожалуй главный плюс -
+                            это легкая интеграция с 1С:Управление торговлей </p>
+
+                        <p style="text-align: left;
+                            margin: 10px 25px 0px;
+                            white-space: nowrap;
+                            padding: 0;
+                            overflow: hidden;">
+                            <span style="
+                            background-color: #b50707;
+                            border: 0;
+                            cursor: pointer;
+                            display: inline-block;
+                            margin: 0;
+                            text-decoration: none;
+                            white-space: nowrap;
+                            border-radius: 3px;
+                            font-weight: 700;
+                            font-family: Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                            color: #fff;
+                            text-align: center;
+                            padding: 0 12px;
+                            height: 36px;
+                            font-size: 15px;
+                            line-height: 36px;
+                            -webkit-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            box-sizing: border-box;
+                            -webkit-font-smoothing: antialiased;
+                            -webkit-transition: 220ms ease-in-out;
+                            -moz-transition: 220ms ease-in-out;
+                            -ms-transition: 220ms ease-in-out;
+                            -o-transition: 220ms ease-in-out;
+                            transition: 220ms ease-in-out;
+                            ">Подробнее</span>
+                            <span style="
+                                top: 5px;
+                                margin-left: 11px;">
+                                <span style="
+                                    font: 400 18px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                    letter-spacing: 0;
+                                    vertical-align: baseline;">от</span>
+                                <span style="
+                                    display: inline-block;
+                                    font: 700 29px/30px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                    vertical-align: baseline;">25 499</span>&nbsp;
+                                    <span style="
+                                        font: 400 18px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                        letter-spacing: 0;
+                                        vertical-align: baseline;">руб.</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 abt-shoe-left">
+                    <div class="abt-one">
+                        <a href="single.html"><img src="/templates/beez3/images/wordpress-bg-medblue.jpg" alt="" /></a>
+                        <h4><a href="single.html">Wordpress</a></h4>
+                        <p>Эта CMS самая популярная в мире! Не надо устанавливать, настраивать, программировать.
+                            Просто добавляйте свою информацию!</p>
+
+                        <p style="text-align: left;
+                            margin: 10px 25px 0px;
+                            white-space: nowrap;
+                            padding: 0;
+                            overflow: hidden;">
+                            <span style="
+                            background-color: #b50707;
+                            border: 0;
+                            cursor: pointer;
+                            display: inline-block;
+                            margin: 0;
+                            text-decoration: none;
+                            white-space: nowrap;
+                            border-radius: 3px;
+                            font-weight: 700;
+                            font-family: Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                            color: #fff;
+                            text-align: center;
+                            padding: 0 12px;
+                            height: 36px;
+                            font-size: 15px;
+                            line-height: 36px;
+                            -webkit-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            box-sizing: border-box;
+                            -webkit-font-smoothing: antialiased;
+                            -webkit-transition: 220ms ease-in-out;
+                            -moz-transition: 220ms ease-in-out;
+                            -ms-transition: 220ms ease-in-out;
+                            -o-transition: 220ms ease-in-out;
+                            transition: 220ms ease-in-out;
+                            ">Подробнее</span>
+                            <span style="
+                                top: 5px;
+                                margin-left: 11px;">
+                                <span style="
+                                    font: 400 18px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                    letter-spacing: 0;
+                                    vertical-align: baseline;">от</span>
+                                <span style="
+                                    display: inline-block;
+                                    font: 700 29px/30px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                    vertical-align: baseline;">15 499</span>&nbsp;
+                                    <span style="
+                                        font: 400 18px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                        letter-spacing: 0;
+                                        vertical-align: baseline;">руб.</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 abt-shoe-left">
+                    <div class="abt-one">
+                        <a href="single.html"><img src="/templates/beez3/images/responsive-joomla-website-design.jpg" alt="" /></a>
+                        <h4><a href="single.html">Joomla</a></h4>
+                        <p>Привыкли с этой CMS? На ней я также делал сайты и знаком не по наслышке. Сайт-визитка,
+                        информационный каталог - легко!</p>
+                        <p style="text-align: left;
+                            margin: 10px 25px 0px;
+                            white-space: nowrap;
+                            padding: 0;
+                            overflow: hidden;">
+                            <span style="
+                            background-color: #b50707;
+                            border: 0;
+                            cursor: pointer;
+                            display: inline-block;
+                            margin: 0;
+                            text-decoration: none;
+                            white-space: nowrap;
+                            border-radius: 3px;
+                            font-weight: 700;
+                            font-family: Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                            color: #fff;
+                            text-align: center;
+                            padding: 0 12px;
+                            height: 36px;
+                            font-size: 15px;
+                            line-height: 36px;
+                            -webkit-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            box-sizing: border-box;
+                            -webkit-font-smoothing: antialiased;
+                            -webkit-transition: 220ms ease-in-out;
+                            -moz-transition: 220ms ease-in-out;
+                            -ms-transition: 220ms ease-in-out;
+                            -o-transition: 220ms ease-in-out;
+                            transition: 220ms ease-in-out;
+                            ">Подробнее</span>
+                            <span style="
+                                top: 5px;
+                                margin-left: 11px;">
+                                <span style="
+                                    font: 400 18px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                    letter-spacing: 0;
+                                    vertical-align: baseline;">от</span>
+                                <span style="
+                                    display: inline-block;
+                                    font: 700 29px/30px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                    vertical-align: baseline;">12 499</span>&nbsp;
+                                    <span style="
+                                        font: 400 18px Arial,'Helvetica Neue',Helvetica,FreeSans,sans-serif;
+                                        letter-spacing: 0;
+                                        vertical-align: baseline;">руб.</span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!--end-abt-shoe-->
+    <div class="shoes">
+    <div class="container">
 			<div class="product-one">
 				<div class="col-md-3 product-left"> 
 					<div class="p-one simpleCart_shelfItem">							
@@ -495,36 +661,6 @@
 		</div>
 	</div>
 	<!--end-shoes-->
-	<!--start-abt-shoe-->
-	<div class="abt-shoe">
-		<div class="container"> 
-			<div class="abt-shoe-main">
-				<div class="col-md-4 abt-shoe-left">
-					<div class="abt-one">
-						<a href="single.html"><img src="/templates/beez3/images/abt-1.jpg" alt="" /></a>
-						<h4><a href="single.html">Cras dolor ligula</a></h4>
-						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
-					</div>
-				</div>
-				<div class="col-md-4 abt-shoe-left">
-					<div class="abt-one">
-						<a href="single.html"><img src="/templates/beez3/images/abt-2.jpg" alt="" /></a>
-						<h4><a href="single.html">Cras dolor ligula</a></h4>
-						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
-					</div>
-				</div>
-				<div class="col-md-4 abt-shoe-left">
-					<div class="abt-one">
-						<a href="single.html"><img src="/templates/beez3/images/abt-3.jpg" alt="" /></a>
-						<h4><a href="single.html">Cras dolor ligula</a></h4>
-						<p>Phasellus auctor vulputate egestas. Nulla facilisi. Cras dolor ligula, pharetra vitae efficitur ac, tempus vitae nisl. Aliquam erat volutpat. </p>
-					</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	<!--end-abt-shoe-->
 	<!--start-footer-->
 	<div class="footer">
 		<div class="container">
