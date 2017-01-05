@@ -64,7 +64,7 @@
 			<div style="position:absolute;top:150px;left:100px;z-index: 999;width:500px">
 				<div style="color:#fff;text-transform: uppercase;    font-size: 28px;
     line-height: 41px;font-family: 'Trebuchet MS', sans-serif;
-    font-weight: 100;">Я Петрович, сделаю для вас
+    font-weight: 100;">Я Вася Петрович, сделаю для вас
 				супер крутой сайт!</div>
 				<a style="display:inline-block;padding:10px 20px;border:1px solid #fff;color:#fff;font-size:20px;text-decoration:none;margin-top:15px;" href="#">от <span style="font-family:Arial;">10 000</span> руб</a>
 			</div>
