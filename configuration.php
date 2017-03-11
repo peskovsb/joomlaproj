@@ -58,7 +58,7 @@ class JConfig {
 	public $feed_email = 'none';
 	public $log_path = '/home/user-204-044/www/testplagin/administrator/logs';
 	public $tmp_path = '/home/user-204-044/www/testplagin/tmp';
-	public $lifetime = '15';
+	public $lifetime = '1500';
 	public $session_handler = 'database';
 	public $memcache_persist = '1';
 	public $memcache_compress = '0';

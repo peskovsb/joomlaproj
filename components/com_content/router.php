@@ -324,7 +324,7 @@ class ContentRouter extends JComponentRouterBase
 		 * We test it first to see if it is a category.  If the id and alias match a category,
 		 * then we assume it is a category.  If they don't we assume it is an article
 		 */
-		if ($count == 1)
+		if ($count == 1 && !$advanced)
 		{
 			// We check to see if an alias is given.  If not, we assume it is an article
 			if (strpos($segments[0], ':') === false)

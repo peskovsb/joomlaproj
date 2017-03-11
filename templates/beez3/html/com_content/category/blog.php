@@ -20,17 +20,19 @@ $cparams = JComponentHelper::getParams('com_media');
 // If the page class is defined, add to class as suffix.
 // It will be a separate class if the user starts it with a space
 ?>
-<section class="blog<?php echo $this->pageclass_sfx;?>">
+<div class="container-webka">
+<?php if ($this->params->get('show_category_title')) : ?>
+	<h2 class="subheading-category">
+		<?php echo JHtml::_('content.prepare', $this->category->title, '', 'com_content.category.title'); ?>
+	</h2>
+<?php endif; ?>
+</div>
+
+<section class="container-webka blog<?php echo $this->pageclass_sfx;?>">
 <?php if ($this->params->get('show_page_heading') != 0) : ?>
 <h1>
 	<?php echo $this->escape($this->params->get('page_heading')); ?>
 </h1>
-<?php endif; ?>
-
-<?php if ($this->params->get('show_category_title')) : ?>
-<h2 class="subheading-category">
-	<?php echo JHtml::_('content.prepare', $this->category->title, '', 'com_content.category.title'); ?>
-</h2>
 <?php endif; ?>
 
 <?php if ($this->params->get('show_description', 1) || $this->params->def('show_description_image', 1)) : ?>
@@ -77,7 +79,7 @@ $cparams = JComponentHelper::getParams('com_media');
 			<?php $row = $counter / $this->columns; ?>
 			<div class="items-row cols-<?php echo (int) $this->columns;?> <?php echo 'row-'.$row; ?>">
 		<?php endif; ?>
-		<article class="item column-<?php echo $rowcount;?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>">
+		<article class="item clearfix column-<?php echo $rowcount;?><?php echo $item->state == 0 ? ' system-unpublished' : null; ?>">
 		<?php
 			$this->item = &$item;
 			echo $this->loadTemplate('item');

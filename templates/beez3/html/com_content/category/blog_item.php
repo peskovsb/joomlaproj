@@ -21,6 +21,18 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 	|| ((strtotime($this->item->publish_down) < strtotime(JFactory::getDate())) && $this->item->publish_down != JFactory::getDbo()->getNullDate())) : ?>
 <div class="system-unpublished">
 <?php endif; ?>
+
+<?php  if (isset($images->image_intro) and !empty($images->image_intro)) : ?>
+	<?php $imgfloat = (empty($images->float_intro)) ? $params->get('float_intro') : $images->float_intro; ?>
+	<div class="img-intro-<?php echo htmlspecialchars($imgfloat); ?>">
+		<img
+			<?php if ($images->image_intro_caption):
+				echo 'class="caption"'.' title="' . htmlspecialchars($images->image_intro_caption, ENT_COMPAT, 'UTF-8') . '"';
+			endif; ?>
+			src="<?php echo htmlspecialchars($images->image_intro, ENT_COMPAT, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($images->image_intro_alt, ENT_COMPAT, 'UTF-8'); ?>"/>
+	</div>
+<?php endif; ?>
+
 <?php if ($params->get('show_title')) : ?>
 	<h2>
 		<?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
@@ -58,11 +70,14 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 
 <?php echo $this->item->event->beforeDisplayContent; ?>
 
-<?php // to do not that elegant would be nice to group the params ?>
+<?php
+// Скроем эти параметры
+if(false){
+?>
 
 <?php if (($params->get('show_author')) or ($params->get('show_category')) or ($params->get('show_create_date')) or ($params->get('show_modify_date')) or ($params->get('show_publish_date')) or ($params->get('show_parent_category')) or ($params->get('show_hits'))) : ?>
  <dl class="article-info">
- <dt class="article-info-term"><?php echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt>
+ <dt class="article-info-term"></dt>
 <?php endif; ?>
 <?php if ($params->get('show_parent_category') && $this->item->parent_id != 1) : ?>
 		<dd class="parent-category-name">
@@ -112,24 +127,14 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 		<?php endif; ?>
 	</dd>
 <?php endif; ?>
-<?php if ($params->get('show_hits')) : ?>
 		<dd class="hits">
-		<?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
 		</dd>
-<?php endif; ?>
 <?php if (($params->get('show_author')) or ($params->get('show_category')) or ($params->get('show_create_date')) or ($params->get('show_modify_date')) or ($params->get('show_publish_date')) or ($params->get('show_parent_category')) or ($params->get('show_hits'))) :?>
  	</dl>
 <?php endif; ?>
-<?php  if (isset($images->image_intro) and !empty($images->image_intro)) : ?>
-	<?php $imgfloat = (empty($images->float_intro)) ? $params->get('float_intro') : $images->float_intro; ?>
-	<div class="img-intro-<?php echo htmlspecialchars($imgfloat); ?>">
-	<img
-		<?php if ($images->image_intro_caption):
-			echo 'class="caption"'.' title="' . htmlspecialchars($images->image_intro_caption, ENT_COMPAT, 'UTF-8') . '"';
-		endif; ?>
-		src="<?php echo htmlspecialchars($images->image_intro, ENT_COMPAT, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($images->image_intro_alt, ENT_COMPAT, 'UTF-8'); ?>"/>
-	</div>
-<?php endif; ?>
+
+<?php } ?>
+
 <?php echo $this->item->introtext; ?>
 
 <?php if ($params->get('show_readmore') && $this->item->readmore) :

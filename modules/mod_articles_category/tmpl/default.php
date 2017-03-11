@@ -80,8 +80,18 @@ defined('_JEXEC') or die;
 		</li>
 		<?php endforeach; ?>
 	<?php else : ?>
+	<?php //print_r($list); ?>
 		<?php foreach ($list as $item) : ?>
 			<li>
+	<?php 
+		$img = json_decode($item->images, true);
+		if(isset($img['image_intro'])){ ?>
+			<div class="centering-img-blog">
+				<img src="<?= $img['image_intro'] ?>">
+			</div>
+		<?php } ?>
+				<div class="mod-arts-main-padder">
+					<div class="mod-arts-main-inner">
 				<?php if ($params->get('link_titles') == 1) : ?>
 					<a class="mod-articles-category-title <?php echo $item->active; ?>" href="<?php echo $item->link; ?>">
 						<?php echo $item->title; ?>
@@ -137,6 +147,8 @@ defined('_JEXEC') or die;
 						</a>
 					</p>
 				<?php endif; ?>
+					</div>
+				</div>
 			</li>
 		<?php endforeach; ?>
 	<?php endif; ?>

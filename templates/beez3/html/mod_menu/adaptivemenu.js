@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $('.btnVertMenu').click(function(){
+        $('.miniwrapper').addClass('active');
+        $(this).hide();
+        $('.btnCloseMenu').show();
+    });
+    $('.btnCloseMenu').click(function(){
+        $('.miniwrapper').removeClass('active');
+        $(this).hide();
+        $('.btnVertMenu').show();
+    });
+});

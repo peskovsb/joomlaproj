@@ -1,0 +1,142 @@
+.wrapper-sendresponce{
+	display: none;
+}
+.bg-rs-form{
+	background: url('/templates/beez3/images/sformpic.png') center center no-repeat;
+	background-size: cover;
+}
+.rs-label{
+	display: block;
+	margin-top:15px;
+}
+.rs-form-rows{
+	padding: 25px 40px;
+}
+.rs-header{
+	margin:0;
+	color: #4cae4f;
+}
+.rs-input{
+	font-size: 1em;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+	color: #484848;
+	padding: 8px 10px;
+	margin: 4px 0 4px;
+	outline: none;
+	width: 100%;
+	box-sizing: border-box;
+}
+.rs-innerwrapper{width: 950px;}
+#success-result-rs{
+	display:none;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index: 9;
+	background: #fff;
+}
+.sr-submbtn{
+	font-size: 1em;padding: 0 40px; margin:20px 0 0 0; line-height: none;
+}
+.btn-preloader-sr{
+	display:none;
+	margin: 20px 0 0 0; width: 193px;padding-top: 15px;height: 30px;
+}
+
+.errorstyle-sr{
+	color: #c11;
+	font-size: 0.8em;
+	display: block;
+}
+.sr-fileinfo{
+	padding: 2px 10px;
+	border: 1px solid #C1C144;
+	background: #f2f5c1;
+	border-radius: 2px;
+	font-size: 0.7em;
+	margin: 15px 0 25px 0;
+}
+.custom-m-rs{
+	margin-top:10px;
+}
+.custom-m-rs .errorstyle-sr{
+	padding: 5px 10px;
+	background: #e8b6b6;
+}
+#comment-sr{
+	resize:vertical ;
+}
+
+/* MEDIA SCREEN */
+/**
+- small phones 0 - 415 px
+- ipad 416 - 770 px
+- square 770 - 1024
+- desktop 1024 - 1200
+*/
+@media (min-width: 1024px) and (max-width: 1300px) {
+
+	.rs-innerwrapper{
+		width: 900px;
+	}
+}
+
+@media (min-width: 770px) and (max-width: 1024px) {
+	/* empty */
+	/*.wrapperCompany__block_content{
+        background:#c24733;
+    }*/
+
+	.rs-innerwrapper{
+		width: 770px;
+	}
+}
+
+@media (min-width: 416px) and (max-width: 770px) {
+
+	.bg-rs-form{
+		display: none;
+	}
+	.rs-innerwrapper{
+		width: 400px;
+	}
+	.btn-preloader-sr{
+		margin: 20px auto 0;
+	}
+	.sr-submbtn{
+		margin: 20px auto 0;
+	}
+}
+
+@media (max-width: 416px) {
+
+	.bg-rs-form{
+		display: none;
+	}
+	.rs-form-rows{
+		padding: 20px 15px;
+		box-sizing: border-box;
+		width: 280px;
+		overflow: hidden;
+	}
+	.fancybox-skin{
+		background: none;
+	}
+	.rs-innerwrapper{
+		 width: 280px;
+		background: #f9f9f9;
+	 }
+	#sendresponceform{
+		overflow: hidden;
+	}
+	.btn-preloader-sr{
+		margin: 20px auto 0;
+	}
+	.sr-submbtn{
+		margin: 20px auto 0;
+	}
+}

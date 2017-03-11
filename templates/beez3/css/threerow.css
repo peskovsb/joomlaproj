@@ -1,0 +1,83 @@
+.wtr-row{
+    float:left;
+    width: 33.3333%;
+}
+.wtr-lighter-days{
+    padding-left:20px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.wtr-lighter-prise{
+    padding-left:20px;
+    font-weight: 600;
+    font-size: 2em;
+}
+.wtr-lighter{
+    font-weight: 500;
+    color: #aaa7a2;
+    margin-bottom: 2px;
+}
+.wtr-btn{
+    background: #4cae4f;
+    color: #fff;
+    display: block;
+    height: 45px;
+    margin: 0 20px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 1.3em;
+    border: 1px solid #447a4d;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+.wtr-row_padding{
+    padding: 15px;
+}
+.wtr-telephone{
+    margin: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.4em;
+}
+
+/* MEDIA SCREEN */
+/**
+- small phones 0 - 415 px
+- ipad 416 - 770 px
+- square 770 - 1024
+- desktop 1024 - 1200
+*/
+
+
+@media (min-width: 416px) and (max-width: 770px) {
+
+    .p_wtr_hide{
+        display: none;
+    }
+    .wtr-row{
+        width: 50%;
+        text-align: center;
+    }
+    .wtr-lighter-days{
+        font-size: 1.3em;
+        padding:0;
+    }
+    .wtr-lighter-prise{
+        padding: 0;
+    }
+}
+
+@media (max-width: 416px) {
+
+    .wtr-row{
+        width: 100%;
+        text-align: center;
+    }
+    .wtr-lighter-days{
+        font-size: 1.3em;
+        padding:0;
+    }
+    .wtr-lighter-prise{
+        padding: 0;
+    }
+
+}

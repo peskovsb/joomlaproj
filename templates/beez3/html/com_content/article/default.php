@@ -21,7 +21,19 @@ JHtml::_('behavior.caption');
 $params = $this->item->params;
 
 ?>
-<article class="item-page<?php echo $this->pageclass_sfx?>">
+
+<?php  if (isset($images->image_fulltext) and !empty($images->image_fulltext)) : ?>
+	<?php $imgfloat = (empty($images->float_fulltext)) ? $params->get('float_fulltext') : $images->float_fulltext; ?>
+<div style="background:#000" class="mainFullPictureInner">
+
+	<div style="background: url('<?php echo htmlspecialchars($images->image_fulltext, ENT_COMPAT, 'UTF-8'); ?>') center center no-repeat" class="img-fulltext-<?php echo htmlspecialchars($imgfloat, ENT_COMPAT, 'UTF-8'); ?>">
+
+	</div>
+</div>
+<?php endif; ?>
+
+<div class="">
+<article class="<?php if ($params->get('show_hits')) : ?>container<?php endif; ?> item-page<?php echo $this->pageclass_sfx?>">
 <?php if ($this->params->get('show_page_heading')) : ?>
 
 <?php if ($this->params->get('show_page_heading') and $params->get('show_title')) :?>
@@ -31,17 +43,20 @@ $params = $this->item->params;
 	<?php echo $this->escape($this->params->get('page_heading')); ?>
 </h1>
 <?php endif; ?>
+<?php if ($params->get('show_title')) : ?>
+	<h2>
+		<span style="display: block;" class="container-webka">
+			<?php echo $this->escape($this->item->title); ?>
+			<div class="ya-share2" data-services="vkontakte,twitter,facebook,gplus" data-counter></div>
+		</span>
+	</h2>
+<?php endif; ?>
 <?php
 if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->paginationposition && $this->item->paginationrelative)
 {
 	echo $this->item->pagination;
 }
-
-if ($params->get('show_title')) : ?>
-		<h2>
-			<?php echo $this->escape($this->item->title); ?>
-		</h2>
-<?php endif; ?>
+?>
 <?php if ($this->params->get('show_page_heading') and $params->get('show_title')) :?>
 </hgroup>
 <?php endif; ?>
@@ -85,7 +100,7 @@ if ($params->get('show_title')) : ?>
 
 <?php if ($useDefList) : ?>
  <dl class="article-info">
- <dt class="article-info-term"><?php  echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt>
+ <dt class="article-info-term"></dt>
 <?php endif; ?>
 <?php if ($params->get('show_parent_category') && $this->item->parent_slug != '1:root') : ?>
 		<dd class="parent-category-name">
@@ -135,11 +150,8 @@ if ($params->get('show_title')) : ?>
 		<?php endif; ?>
 	</dd>
 <?php endif; ?>
-<?php if ($params->get('show_hits')) : ?>
 		<dd class="hits">
-		<?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
 		</dd>
-<?php endif; ?>
 <?php if ($useDefList) : ?>
  </dl>
 <?php endif; ?>
@@ -153,17 +165,6 @@ if ($params->get('show_title')) : ?>
 
 	<?php echo $this->loadTemplate('links'); ?>
 <?php endif; ?>
-	<?php  if (isset($images->image_fulltext) and !empty($images->image_fulltext)) : ?>
-	<?php $imgfloat = (empty($images->float_fulltext)) ? $params->get('float_fulltext') : $images->float_fulltext; ?>
-
-	<div class="img-fulltext-<?php echo htmlspecialchars($imgfloat, ENT_COMPAT, 'UTF-8'); ?>">
-	<img
-		<?php if ($images->image_fulltext_caption):
-			echo 'class="caption"'.' title="' .htmlspecialchars($images->image_fulltext_caption, ENT_COMPAT, 'UTF-8') .'"';
-		endif; ?>
-		src="<?php echo htmlspecialchars($images->image_fulltext, ENT_COMPAT, 'UTF-8'); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt, ENT_COMPAT, 'UTF-8'); ?>"/>
-	</div>
-	<?php endif; ?>
 <?php
 if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item->paginationposition AND !$this->item->paginationrelative):
 	echo $this->item->pagination;
@@ -224,3 +225,4 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item-
 <?php endif; ?>
 	<?php echo $this->item->event->afterDisplayContent; ?>
 </article>
+</div>
